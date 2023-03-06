@@ -105,7 +105,7 @@ function App() {
         <div className="clock-time">
           <h4>{!changeSession ? "Session" : "Break"}</h4>
           <h1>
-            {sessionCount}:{counter < 10 ? "0" + counter : counter}
+            {sessionCount} : {counter < 10 ? "0" + counter : counter}
           </h1>
           <button
             onClick={clickPause}
@@ -129,9 +129,8 @@ function App() {
         <p>Break Length</p>
       </div>
       <div id="belt-down">
-        <div className="dot">.</div>
-        <div>.</div>
-        <div>.</div>
+        <div className="dot">▄▄</div>
+        <div className="dot">▄▄</div>
       </div>
     </div>
   );
