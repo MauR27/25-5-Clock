@@ -39,7 +39,7 @@ function App() {
         setIsPaused(true);
       }, 3000);
     }
-  }, [counter]);
+  }, [counter, breakInput, changeSession, input, sessionCount]);
 
   function clickPause() {
     setIsPaused((prev) => !prev);
@@ -94,11 +94,11 @@ function App() {
       <div id="display-box">
         <p>Session Length</p>
         <div className="session-time">
-          <div onWheel={!isPaused && inputWheelUp}>
+          <div onWheel={!isPaused ? inputWheelUp : null}>
             <MdOutlineKeyboardDoubleArrowUp />
           </div>
           <h3>{input}</h3>
-          <div onWheel={!isPaused && inputWheelDown}>
+          <div onWheel={!isPaused ? inputWheelDown : null}>
             <MdOutlineKeyboardDoubleArrowDown />
           </div>
         </div>
@@ -118,11 +118,11 @@ function App() {
           </button>
         </div>
         <div className="break-time">
-          <div onWheel={!isPaused && breakWheelUp}>
+          <div onWheel={!isPaused ? breakWheelUp : null}>
             <MdOutlineKeyboardDoubleArrowUp />
           </div>
           <h3>{breakInput}</h3>
-          <div onWheel={!isPaused && breakWheelDown}>
+          <div onWheel={!isPaused ? breakWheelDown : null}>
             <MdOutlineKeyboardDoubleArrowDown />
           </div>
         </div>
