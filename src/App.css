@@ -16,7 +16,7 @@ body {
   background-color: #c3c3c3;
   border-right: 3px solid rgb(0%, 0%, 0%, 0.3);
   border-left: 3px solid rgb(0%, 0%, 0%, 0.3);
-  box-shadow: 0 10px 60px 5px black;
+  box-shadow: 0 10px 60px 1px black;
   width: 130px;
   height: 330px;
   margin-left: 60px;
@@ -25,7 +25,7 @@ body {
   background-color: #c3c3c3;
   border-left: 3px solid rgb(0%, 0%, 0%, 0.3);
   border-right: 3px solid rgb(0%, 0%, 0%, 0.3);
-  box-shadow: 0 10px 60px 5px black;
+  box-shadow: 0 10px 60px 1px black;
   width: 130px;
   height: 297px;
   margin-left: 60px;
@@ -42,12 +42,17 @@ body {
   justify-content: center;
   color: white;
   text-align: center;
-  box-shadow: 0 10px 60px 5px black;
+  box-shadow: 0 10px 60px 1px black;
   background-color: #252424;
   border: solid 3px rgb(89.02%, 89.41%, 89.8%, 0.1);
   border-radius: 65px;
   height: 260px;
   width: 230px;
+}
+#display-box p {
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 100;
 }
 
 .session-time {
@@ -94,7 +99,7 @@ button {
   border: none;
   font-size: 25px;
   cursor: pointer;
-  margin: 5px 2px 0 2px;
+  margin: 5px 0px 0 0px;
 }
 
 button:hover {
@@ -102,5 +107,12 @@ button:hover {
 }
 
 .clock-time h1 {
-  margin-top: 5px;
+  margin-top: 8px;
+  margin-left: 5px;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+.clock-time h4 {
+  letter-spacing: 2px;
+  font-weight: 100;
 }

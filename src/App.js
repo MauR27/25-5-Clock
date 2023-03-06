@@ -103,9 +103,14 @@ function App() {
           </div>
         </div>
         <div className="clock-time">
-          <h4>{!changeSession ? "Session" : "Break"}</h4>
-          <h1>
-            {sessionCount} : {counter < 10 ? "0" + counter : counter}
+          <h4 style={sessionCount === 0 ? { color: "#FF3232" } : null}>
+            {!changeSession ? "Session" : "Break"}
+          </h4>
+          <h1
+            style={sessionCount === 0 ? { color: "#FF3232" } : null}
+            className="prueba"
+          >
+            {sessionCount}:{counter < 10 ? "0" + counter : counter}
           </h1>
           <button
             onClick={clickPause}
