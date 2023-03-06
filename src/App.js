@@ -106,10 +106,7 @@ function App() {
           <h4 style={sessionCount === 0 ? { color: "#FF3232" } : null}>
             {!changeSession ? "Session" : "Break"}
           </h4>
-          <h1
-            style={sessionCount === 0 ? { color: "#FF3232" } : null}
-            className="prueba"
-          >
+          <h1 style={sessionCount === 0 ? { color: "#FF3232" } : null}>
             {sessionCount}:{counter < 10 ? "0" + counter : counter}
           </h1>
           <button
